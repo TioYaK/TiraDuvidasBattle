@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tira Dúvidas BattleStorm</title>
+    <meta name="description" content="Sistema de resolução de dúvidas da guild BattleStorm.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    
+    <div class="container">
+        <header>
+            <h1 class="glow-text">BattleStorm</h1>
+            <p class="subtitle">Tira Dúvidas - Fluxo de Suporte</p>
+        </header>
+
+        <main id="app-card" class="card">
+            <div id="content-area" class="fade-enter-active">
+                <h2 id="question-text">Carregando...</h2>
+                <div id="buttons-container" class="actions">
+                    <button id="btn-yes" class="btn btn-primary" onclick="handleAnswer('yes')">Sim</button>
+                    <button id="btn-no" class="btn btn-secondary" onclick="handleAnswer('no')">Não</button>
+                </div>
+                <div id="restart-container" class="actions hidden">
+                    <button id="btn-restart" class="btn btn-primary" onclick="startFlow()">Começar Novamente</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

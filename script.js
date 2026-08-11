@@ -32,11 +32,16 @@ const steps = {
         no: "FINAL_4"
     },
     7: {
-        question: 'Seu Whatsapp está registrado no site <a href="https://battlestorm.com.br/" target="_blank" class="link-highlight">battlestorm.com.br</a>?',
+        question: "Seus personagens estão na guilda?",
         yes: 8,
-        no: "FINAL_5"
+        no: "FINAL_7"
     },
     8: {
+        question: 'Seu Whatsapp está registrado no site <a href="https://battlestorm.com.br/" target="_blank" class="link-highlight">battlestorm.com.br</a>?',
+        yes: 9,
+        no: "FINAL_5"
+    },
+    9: {
         question: "Você está com o ícone de Whatsapp no TS?",
         yes: "FINAL_6",
         no: "FINAL_4"
@@ -49,7 +54,8 @@ const finals = {
     "FINAL_3": "Aí está o seu problema, volte a falar comigo quando você tiver suas metas.",
     "FINAL_4": "Procure um líder no TEAMSPEAK (Não adianta ficar chorando no whatsapp).",
     "FINAL_5": "Aí está o problema, se registre.",
-    "FINAL_6": "Então está tudo certo! Você cumpre todos os requisitos.<br><br>Se ainda tiver problemas, procure um líder no TS."
+    "FINAL_6": "Então está tudo certo! Você cumpre todos os requisitos.<br><br>Se ainda tiver problemas, procure um líder no TS.",
+    "FINAL_7": 'Dê apply nas guildas, e preencha o formulário em <a href="https://tioyak.github.io/FormularioBattle/" target="_blank" class="link-highlight">https://tioyak.github.io/FormularioBattle/</a>, esse bot só ACEITA na guilda, ou seja, se faz necessário dar APPLY'
 };
 
 let currentStep = 1;
